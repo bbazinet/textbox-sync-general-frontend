@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TextBox General Contact Sync Tool</title>
+  <title>TextBox General Contact Sync</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -271,7 +271,7 @@
 </head>
 <body>
   <div class="header">
-    TextBox General Contact Sync Tool
+    TextBox General Contact Sync
   </div>
 
   <div class="container">
@@ -337,7 +337,7 @@
       <div class="actions">
         <button class="button" id="runButton" onclick="runSync()">
           <span class="spinner" id="spinner"></span>
-          <span id="buttonText">Run General Sync</span>
+          <span id="buttonText">Run Contact Sync</span>
         </button>
 
         <div class="hint-inline">✔ Safe merge mode for non-apartment contacts</div>
@@ -504,24 +504,24 @@
 
             <div class="download" style="margin-top:22px;">
               <h3>Download Your Files</h3>
-              <a href="${API_BASE + data.downloads.import}" target="_blank">Download Import File (Upload to TextBox)</a>
+              <a href="${API_BASE + data.downloads.import}" target="_blank">Download Import File</a>
               <a href="${API_BASE + data.downloads.summary}" target="_blank">Download Summary</a>
             </div>
 
             <div style="margin-top:22px;">
               <h3>How It Works</h3>
               <p style="line-height:1.6;">
-                1. Upload your new source file and current TextBox export<br>
-                2. Click <b>Run General Sync</b><br>
-                3. Download the import file<br>
-                4. Upload that file into TextBox<br><br>
+              1. Upload your new source file and current TextBox contacts export<br>
+              2. Click <b>Run Contact Sync</b><br>
+              3. Download the import file<br>
+              4. Upload that file into TextBox<br><br>
 
-                <b>What happens:</b><br>
-                • Matching contacts are updated<br>
-                • New contacts are added<br>
-                • Existing unmatched contacts remain unchanged<br><br>
+              <b>What happens:</b><br>
+              • New contacts are added<br>
+              • Matching contacts are updated<br>
+              • Existing unmatched contacts remain unchanged<br><br>
 
-                This creates a safe merged sync without clearing existing Contact2 or Groups values.
+              This creates a safe merged sync without clearing existing Contact2 or Groups values.
               </p>
             </div>
           </div>
